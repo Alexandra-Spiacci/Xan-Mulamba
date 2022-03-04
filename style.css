@@ -3,13 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overscroll-behavior-y: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
 
 .slider-wrap {
     position: fixed;
-    top:20%;
+    top:30%;
     left: 10%;
     width: 80%;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     border: 1px solid black;
 }
@@ -22,7 +29,7 @@
     width: 4000px;
     display: flex;
     will-change: transform;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.13);
 }
 
 .slider-item {
@@ -39,4 +46,28 @@
     background-size: cover;
     background-position: center;
 
+}
+h1{
+    
+    text-align: center;
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+p {
+    position: fixed;
+    top: 25%;
+    left: 44%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section {
+    position: fixed;
+    top: 75%;
+    left: 46%;
 }
